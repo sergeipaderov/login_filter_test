@@ -1,0 +1,119 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #6d1875; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #6d1875 13%, #400d44 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #6d1875 13%,#400d44 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #6d1875 13%,#400d44 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d1875', endColorstr='#400d44',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.auth__window {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.auth__header {
+  background-color: #814e87;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: .5em;
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.auth__form {
+  background-color: #f5f2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 40px;
+  border-radius: 0 0 5px 5px;
+}
+
+.user__wrapper, .password__wrapper, action__wrapper{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.user__input, .password__input {
+  display: flex;
+  align-self: center;
+  width: 97%;
+  height: 50px;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #d6d6d6;
+  background-color: #f9eaff;
+  color: #939292;
+  padding-left: 3%;
+  font-weight: bold;
+}
+
+.user__icon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: #727171;
+}
+
+.password__icon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: #727171;
+}
+
+.action__submit {
+  padding: 15px 50px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 40px;
+  background-color: #814e87;
+  color: #fff;
+  font-weight: bold;
+}
+
+.action__submit:hover {
+  background-color: #6d1875;
+  cursor: pointer;
+}
+
+.action__link {
+  text-decoration: none;
+  color: #939292;
+}
+
+@media only screen and (max-width: 767px) {
+  .auth__window {
+    max-width: 310px;
+  }
+
+  .action__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .action__submit {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .action__link {
+    margin-top: 20px;
+  }
+}
